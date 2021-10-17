@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anchorPane_App" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="berkan.bt.AppController">
+   <children>
+      <Button fx:id="buttonCreateRandomMap_App" layoutX="330.0" layoutY="720.0" mnemonicParsing="false" onAction="#actionCreateRandomMap" prefHeight="70.0" prefWidth="220.0" text="Create Random Map" AnchorPane.bottomAnchor="10.0">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelZones_App" alignment="CENTER" layoutX="650.0" layoutY="720.0" prefHeight="70.0" prefWidth="220.0" text="0 Zones" textAlignment="CENTER" AnchorPane.bottomAnchor="10.0">
+         <font>
+            <Font name="Calibri Bold" size="40.0" />
+         </font>
+      </Label>
+      <GridPane fx:id="gridPane" alignment="CENTER" hgap="2.0" layoutX="50.0" layoutY="20.0" prefHeight="680.0" prefWidth="1100.0" vgap="2.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0">
+        <columnConstraints>
+          <ColumnConstraints maxWidth="25.0" minWidth="25.0" prefWidth="25.0" />
+        </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>
